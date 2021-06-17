@@ -21,11 +21,11 @@ function Navbar() {
           <Typography variant="h6" className={classes.title} color="inherit">
             <img
               src={logo}
-              alt="JBL Sellr"
+              alt="JBL React Shop"
               height="35px"
               className={classes.image}
             />
-            JBL Sellr
+            JBL React Shop
           </Typography>
 
           <div className={classes.grow}> </div>
