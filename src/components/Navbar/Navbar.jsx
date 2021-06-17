@@ -12,7 +12,7 @@ import {
 import { ShoppingCart } from "@material-ui/icons";
 import useStyles from "./navbarStyles";
 
-function Navbar() {
+function Navbar({ cartTotalItems }) {
   const classes = useStyles();
   return (
     <>
@@ -32,7 +32,7 @@ function Navbar() {
 
           <div className={classes.button}>
             <IconButton aria-label="Show Cart Items" color="inherit">
-              <Badge badgeContent={5} color="secondary">
+              <Badge badgeContent={cartTotalItems} color="secondary">
                 <ShoppingCart />
               </Badge>
             </IconButton>
